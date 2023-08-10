@@ -73,10 +73,11 @@ function showQuestion(){
 }
 
 function resetState(){
-    nextButton.style.display = "none"};
+    nextButton.style.display = "none";
     while(answerButtons.firstChild){
         answerButtons.removeChild(answerButtons.firstChild);
     }
+}
 
 function selectAnswer(e){
     const selectedBtn = e.target;
@@ -120,6 +121,6 @@ nextButton.addEventListener("click", ()=>{
     }else{
         startQuiz();
     }
-})
+});
 
 startQuiz();
